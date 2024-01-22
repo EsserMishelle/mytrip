@@ -61,6 +61,7 @@ function App() {
 
   useEffect(() => {
     getStay(formData); // Pass formData directly to getStay
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formData]);
 
   if (loading) {
