@@ -1,4 +1,5 @@
 import "./App.css";
+import { API_BASE_URL, API_KEY } from "./apiConfig";
 import Card from "./components/Card";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
