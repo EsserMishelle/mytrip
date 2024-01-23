@@ -22,7 +22,7 @@ function App() {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "53564e1c29msh0ead9632d4d17b8p1234c1jsn34d0ef81c5c0",
+      "X-RapidAPI-Key": API_KEY,
       "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
     },
   };
