@@ -1,6 +1,8 @@
+import { API_BASE_URL, API_KEY } from "./apiConfig";
 import "./App.css";
 
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import React, { useState, useEffect } from "react";
@@ -23,13 +25,17 @@ function App() {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "53564e1c29msh0ead9632d4d17b8p1234c1jsn34d0ef81c5c0",
+      "X-RapidAPI-Key": API_KEY,
       "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
+      // "airbnb13.p.rapidapi.com"
     },
   };
 
-  const url = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=${formData.checkin}&checkout=${formData.checkout}&adults=${formData.adults}&children=${formData.children}&infants=${formData.infants}&pets=${formData.pets}&page=1&currency=USD`;
+  const url = `${API_BASE_URL}/search-location?location=${formData.location}&checkin=${formData.checkin}&checkout=${formData.checkout}&adults=${formData.adults}&children=${formData.children}&infants=${formData.infants}&pets=${formData.pets}&page=1&currency=USD`;
   console.log("API URL:", url);
+
+  // const url = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=${formData.checkin}&checkout=${formData.checkout}&adults=${formData.adults}&children=${formData.children}&infants=${formData.infants}&pets=${formData.pets}&page=1&currency=USD`;
+  // console.log("API URL:", url);
 
   const getStay = async (formData) => {
     const url = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=${formData.checkin}&checkout=${formData.checkout}&adults=${formData.adults}&children=${formData.children}&infants=${formData.infants}&pets=${formData.pets}&page=1&currency=USD`;
@@ -93,12 +99,8 @@ function App() {
         )}
       </section>
       <Card />
+      <Footer />
     </div>
   );
 }
 export default App;
-
-// const url = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=2024-02-01&checkout=2024-02-02&adults=2&children=0&infants=0&pets=0&page=1&currency=USD`;
-
-//hardcode
-// const url = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=2024-02-01&checkout=2024-02-02&adults=2&children=0&infants=0&pets=0&page=1&currency=USD`;
