@@ -1,9 +1,15 @@
 /* eslint-disable no-unused-vars */
+
 import React, { useState, useEffect } from "react";
+import { API_BASE_URL, API_KEY } from "../apiConfig";
 // import "./App.css";
 import { ReactComponentas as airbnbLogo } from "./airbnb.svg";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { useParams } from "react-router-dom";
+
 export default function Navbar({ staySearch, formData, setFormData }) {
+  // const params = useParams();
+  // const myStay = params.id;
   const id = React.useId();
 
   async function handleChange(event) {
@@ -38,17 +44,18 @@ export default function Navbar({ staySearch, formData, setFormData }) {
         crossorigin="anonymous"
       ></script> */}
 
-      {/* <FontAwesomeIcon
-        icon={faAirbnb}
-        flip="horizontal"
-        style={{ color: "#410ff5" }}
-      /> */}
-      {/* <airbnbLogo /> */}
       <img
+        src="https://clipground.com/images/png-logo-generator-online-8.png"
+        className="nav--logo"
+        alt="company logo"
+      />
+      <h4 className="nav--logo">Wise Travel</h4>
+
+      {/* <img
         src="https://pluspng.com/img-png/airbnb-logo-png-airbnb-logo-9-png-22-de-outubro-de-2016-577.png"
         className="nav--logo"
         alt="airbnb logo"
-      />
+      /> */}
       {/* <FontAwesomeIcon
         icon={icon({ name: "airbnb", family: "brands", style: "solid" })}
       /> */}

@@ -4,9 +4,17 @@
 /node_modules
 /.pnp
 .pnp.js
+apiConfig.js
 
 # testing
 /coverage
+App_hardCodeLocationWorks.js
+App_working.js
+./components/Navbar_hardCodeWorking.js
+./components/Navbar_works.js
+./components/CardDetail.js
+./components/Card_works.js
+App40cardsPerRow.css
 
 # production
 /build

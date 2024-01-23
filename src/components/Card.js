@@ -1,8 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Heart from "./Heart";
+import { link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function Card({ stay }) {
+  //assigning myStayId to be the stay id user clicked
+  const params = useParams();
+  const myStayId = params.id;
+
   if (!stay) {
     return null;
   }
@@ -21,6 +27,15 @@ export default function Card({ stay }) {
         {badgeText && <div className="card--badge"> {badgeText}</div>}
         {/* Add Heart component logic here after I learn local storage or back-end*/}
       </div>
+
+      {/* trying to link to my CardDetail page
+      <div className="stay">
+        <Link to ="/stay/" className="card--chosen-link" >
+        <img src={stay.images[0]} alt="location img" className="card--image" />
+        </Link>
+      </div> */}
+
+      {/* link directly to airbnb web */}
       <a href={stay.url}>
         <img src={stay.images[0]} alt="location img" className="card--image" />
       </a>
