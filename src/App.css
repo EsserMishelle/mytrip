@@ -16,7 +16,7 @@ margin-top: 5px;
   padding: 20px 36px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   align-items: center;
-  
+  background-color: #66e9fa;
 }
 .input--location{
   width:auto;
@@ -107,8 +107,8 @@ margin-top: 5px;
 }
 
 .nav--logo {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 75px;
+  max-height: 75px;
 }
 
 section {
@@ -123,6 +123,7 @@ section {
 .hero--photo {
   max-width: fit-content;
   align-self: center;
+  margin-top: 15px;
 }
 
 .hero--header {
@@ -240,8 +241,8 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background-color: rgba(0, 195, 255, 0.651);
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 50px;}
+  height: 55px;}
