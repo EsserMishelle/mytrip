@@ -39,6 +39,13 @@ function App() {
     headers: {
       "X-RapidAPI-Key": API_KEY,
       "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
+      // ////not free
+      // "X-RapidAPI-Key": "53564e1c29msh0ead9632d4d17b8p1234c1jsn34d0ef81c5c0",
+      // "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
+
+      // // //free
+      // "X-RapidAPI-Key": "c74bca8793mshbe346c89ee2ced7p166ad8jsnb4613ccb8d61",
+      // "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
     },
   };
 

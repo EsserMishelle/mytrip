@@ -30,14 +30,9 @@ function App() {
 
   const getStay = async () => {
     console.log(formData);
-    // const url = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=2024-02-01&checkout=2024-02-02&adults=2&children=0&infants=0&pets=0&page=1&currency=USD`;
 
     const url = `https://airbnb13.p.rapidapi.com/search-location?location={formData.location}&checkin=2024-02-01&checkout=2024-02-02&adults=2&children=0&infants=0&pets=0&page=1&currency=USD`;
 
-    // const url = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=${formData.checkin}&checkout=${formData.checkout}&adults=${formData.adults}&children=${formData.children}&infants=${formData.infants}&pets=${formData.pets}&page=1&currency=USD`;
-
-    // const apiUrl = `https://airbnb13.p.rapidapi.com/search-location?location=${formData.location}&checkin=${formData.checkin}&checkout=${formData.checkout}&adults=${formData.adults}&children=${formData.children}&infants=${formData.infants}&pets=${formData.pets}&page=1&currency=USD`;
-    // console.log("API URL:", apiUrl);
     try {
       // const response = await fetch(apiUrl, options);
 

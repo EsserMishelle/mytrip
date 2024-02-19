@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 
 import React, { useState, useEffect } from "react";
-import { API_BASE_URL, API_KEY } from "../apiConfig";
+
 // import "./App.css";
-import { ReactComponentas as airbnbLogo } from "./airbnb.svg";
+import { ReactComponent as AirbnbLogo } from "./airbnb.svg";
+
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { useParams } from "react-router-dom";
 
@@ -26,6 +27,16 @@ export default function Navbar({ staySearch, formData, setFormData }) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Form Data submitted:", formData);
+
+    const currentDate = new Date();
+    const checkinDate = new Date(formData.checkin);
+    const checkoutDate = new Date(formData.checkout);
+
+    if (checkinDate < currentDate || checkoutDate < currentDate) {
+      console.log(`Checkin and checkout date cannot be later than today`);
+      return;
+    }
+
     // Check if required fields are present
     const requiredFields = ["location", "checkin", "checkout", "adults"];
     const isFormDataValid = requiredFields.every((field) => formData[field]);
@@ -39,27 +50,16 @@ export default function Navbar({ staySearch, formData, setFormData }) {
 
   return (
     <nav>
-      {/* <script
-        src="https://kit.fontawesome.com/6c2258e105.js"
-        crossorigin="anonymous"
-      ></script> */}
+      <div className="nav--log--word">
+        <img
+          src="https://clipground.com/images/png-logo-generator-online-8.png"
+          className="nav--logo"
+          alt="company logo"
+        />
+        <h5 className="nav--logo">My Travel</h5>
+      </div>
 
-      <img
-        src="https://clipground.com/images/png-logo-generator-online-8.png"
-        className="nav--logo"
-        alt="company logo"
-      />
-      <h4 className="nav--logo">Wise Travel</h4>
-
-      {/* <img
-        src="https://pluspng.com/img-png/airbnb-logo-png-airbnb-logo-9-png-22-de-outubro-de-2016-577.png"
-        className="nav--logo"
-        alt="airbnb logo"
-      /> */}
-      {/* <FontAwesomeIcon
-        icon={icon({ name: "airbnb", family: "brands", style: "solid" })}
-      /> */}
-      <form onSubmit={handleSubmit}>
+      <form className="form--search" onSubmit={handleSubmit}>
         <label htmlFor={id + "-location"}>Where</label>
         <input
           type="text"
@@ -137,7 +137,7 @@ export default function Navbar({ staySearch, formData, setFormData }) {
         {/* <button type="submit" disabled={loading}>
           {loading ? "searching..." : "Search"} */}
         <button className="form--submit" type="submit">
-          Search please
+          Search
         </button>
       </form>
     </nav>

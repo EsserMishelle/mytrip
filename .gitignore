@@ -2,29 +2,36 @@
 
 # dependencies
 /node_modules
+node_modules/
 /.pnp
 .pnp.js
-apiConfig.js
+.env
 
 # testing
 /coverage
+App_1_02182024_copy.js
+App1.js
+App_copy.js
+
+
+App_hardCodeAPIKey_location.js
+App_hardCodeLocationWorks.js
 App_hardCodeLocationWorks.js
 App_working.js
+App_hardCodeDates_works.js
+App_1-02182024_copy.js
+
 ./components/Navbar_hardCodeWorking.js
 ./components/Navbar_works.js
 ./components/CardDetail.js
 ./components/Card_works.js
-App40cardsPerRow.css
+
 
 # production
 /build
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 npm-debug.log*
 yarn-debug.log*

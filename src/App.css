@@ -10,88 +10,108 @@ body {
 }
 
 nav {
-margin-top: 5px;
+  margin-top: 5px;
   height: auto;
   display: flex;
   padding: 20px 36px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   align-items: center;
-  background-color: #66e9fa;
+  background: linear-gradient(to bottom right, #33ccff 24%, #ccffcc 100%);
+  opacity: 0.9;
+  justify-content: space-between; /* Add this line */
 }
+
+/* form {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+} */
+
 .input--location{
   width:auto;
-  height: 45px;
-  border-radius: 25px;
+  height: 30px;
+  border-radius: 20px;
   border-color: rgb(233, 229, 229);
-  margin: 5px 10px;
-  padding: 7px;
-  /* margin-right: 5px; */
+  margin: 5px 5px 5px 5px;;
+  padding: 3px;
+  margin-left: 5px;
   box-shadow: 2px 2px lightgray;
+  font-size: 15px;
 }
 
 .input--checkin{
   width:auto;
-  height: 45px;
-  border-radius: 25px;
+  height: 30px;
+  border-radius: 20px;
   border-color: rgb(233, 229, 229);
-  margin: 5px 10px;
-  padding: 7px;
+  margin: 5px 5px 5px 5px;;
+  padding: 3px;
   /* margin-right: 5px; */
   box-shadow: 2px 2px lightgray;
+  font-size: 15px;
 }
 
 .input--checkout{
   width:auto;
-  height: 45px;
-  border-radius: 25px;
+  height: 30px;
+  border-radius: 20px;
   border-color: rgb(233, 229, 229);
-  margin: 5px 10px;
-  padding: 7px;
+  margin: 5px 5px 5px 5px;;
+  padding: 3px;
   /* margin-right: 5px; */
   box-shadow: 2px 2px lightgray;
+  font-size: 15px;
 }
 
 .input--adults{
-  width: 50px;
-  height: 45px;
-  border-radius: 13px;
+  width: 30px;
+  height: 25px;
+  border-radius: 15px;
   border-color: rgb(233, 229, 229);
-  margin: 5px 10px;
-  padding: 7px;
+  margin: 5px 5px 5px 5px;
+  padding: 3px;
   /* margin-right: 5px; */
   box-shadow: 2px 2px lightgray;
+  font-size: 15px;
 }
 .input--children{
-  width: 50px;
-  height: 45px;
-  border-radius: 13px;
+  width: 30px;
+  height: 25px;
+  border-radius: 15px;
   border-color: rgb(233, 229, 229);
-  margin: 5px 10px;
-  padding: 7px;
+  margin: 5px 5px 5px 5px;
+  padding: 3px;
   /* margin-right: 5px; */
   box-shadow: 2px 2px lightgray;
+  font-size: 15px;
 }
 .input--infants{
-  width: 50px;
-  height: 45px;
-  border-radius: 13px;
+  width: 30px;
+  height: 25px;
+  border-radius: 15px;
   border-color: rgb(233, 229, 229);
-  margin: 5px 10px;
-  padding: 7px;
+  margin: 5px 5px 5px 5px;;
+  padding: 3px;
   /* margin-right: 5px; */
   box-shadow: 2px 2px lightgray;
+  font-size: 15px;
 }
 .input--pets{
-  width: 50px;
-  height: 45px;
-  border-radius: 13px;
+  width: 30px;
+  height: 25px;
+  border-radius: 15px;
   border-color: rgb(233, 229, 229);
-  margin: 5px 10px;
-  padding: 7px;
+  margin: 5px 5px 5px 5px;;
+  padding: 3px;
   /* margin-right: 5px; */
   box-shadow: 2px 2px lightgray;
+  font-size: 15px;
 }
-
+/* .form--search {
+  display: flex;
+  justify-content: space-between;
+  
+} */
 
 /* .hero-pic {
   max-width: fit-content;
@@ -107,8 +127,18 @@ margin-top: 5px;
 }
 
 .nav--logo {
-  max-width: 75px;
-  max-height: 75px;
+
+  max-width: 70px;
+  max-height: 70px;
+  margin-right: -5px;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+.nav--logo--text{
+  padding-top: 0;
+  margin-top: 13px;
+  margin-left: 3px;
+  
 }
 
 section {
@@ -245,4 +275,4 @@ section{
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 55px;}
+  height: 65px;}
