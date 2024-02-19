@@ -43,12 +43,6 @@ function App() {
   };
 
   const getStay = async () => {
-    console.log(process.env.REACT_APP_API_BASE_URL);
-    console.log(process.env.REACT_APP_API_KEY);
-
-    console.log("API_BASE_URL:", API_BASE_URL);
-    console.log("API_KEY:", API_KEY);
-
     const url = `${API_BASE_URL}/search-location?location=${formData.location}&checkin=${formData.checkin}&checkout=${formData.checkout}&adults=${formData.adults}&children=${formData.children}&infants=${formData.infants}&pets=${formData.pets}&page=1&currency=USD`;
 
     console.log("Constructed URL:", url);
