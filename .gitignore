@@ -11,20 +11,22 @@ node_modules/
 /coverage
 App_1_02182024_copy.js
 App1.js
-App_copy.js
 
 
 App_hardCodeAPIKey_location.js
 App_hardCodeLocationWorks.js
-App_hardCodeLocationWorks.js
+app_hardCodeLocationWorks.js
 App_working.js
 App_hardCodeDates_works.js
 App_1-02182024_copy.js
+App1.js
+App_copy.js
 
 ./components/Navbar_hardCodeWorking.js
 ./components/Navbar_works.js
 ./components/CardDetail.js
 ./components/Card_works.js
+app1.js
 
 
 # production
