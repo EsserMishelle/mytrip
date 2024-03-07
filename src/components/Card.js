@@ -25,15 +25,8 @@ export default function Card({ stay }) {
     <div className="card">
       <div className="card--info">
         {badgeText && <div className="card--badge"> {badgeText}</div>}
-        {/* Add Heart component logic here after I learn local storage or back-end*/}
+        {/* Add Heart component logic here after learning local storage or back-end*/}
       </div>
-
-      {/* trying to link to my CardDetail page
-      <div className="stay">
-        <Link to ="/stay/" className="card--chosen-link" >
-        <img src={stay.images[0]} alt="location img" className="card--image" />
-        </Link>
-      </div> */}
 
       {/* link directly to airbnb web */}
       <a href={stay.url}>
@@ -50,13 +43,11 @@ export default function Card({ stay }) {
         />{" "}
         <h4 className="rating">{stay.rating} </h4>{" "}
         <h4 className="reviewCount">({stay.reviewsCount})</h4>
-        {/* <span className="bold">{stay.rating}</span>
-        <span className="bold"> ({stay.reviewsCount})</span> */}
       </div>
       <div className="card--title">
         <p>{stay.name}</p>
-        <span className="bold">${stay.price.rate} night •</span>
-        <span>${stay.price.total} night •</span>
+        <span className="bold">${stay.price.rate}/night •</span>
+        <span>${stay.price.total}/stay •</span>
       </div>
     </div>
     // </div>
